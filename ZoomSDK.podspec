@@ -31,7 +31,7 @@ Pod::Spec.new do |spec|
   spec.libraries = "z", "c++", "sqlite3"
   spec.frameworks = "VideoToolbox", "CoreBluetooth", "ReplayKit", "CoreMotion"
 
-  spec.subspec 'ShareScreen' do !subspec!
+  spec.subspec 'ShareScreen' do |subspec|
     subspec.ios.deployment_target       = "9.0"
     subspec.ios.source_files            = "MobileRTCScreenShare.framework/Headers/**/*.{m}"
     subspec.ios.public_header_files     = "MobileRTCScreenShare.framework/Headers/**/*.{h,m,swift}"
