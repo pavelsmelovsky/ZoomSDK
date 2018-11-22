@@ -8,12 +8,13 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "ZoomSDK"
-  spec.version      = "4.1.32183.0910"
+  spec.version      = "4.1.34076.1024"
   spec.summary      = "Original framework for Zoom.us service"
   spec.homepage     = "https://github.com/zoom/zoom-sdk-ios"
   spec.license      = { :type => "Commercial", :file => "LICENSE.md" }
   spec.author             = { "Pavel Smelovsky" => "pavel.smelovsky@gmail.com" }
 
+  spec.swift_version           = "3.2"
   spec.ios.deployment_target      = "9.0"
 
   spec.source       = { :git => "https://github.com/pavelsmelovsky/ZoomSDK.git", :tag => "v#{spec.version}" }
