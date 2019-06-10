@@ -8,14 +8,14 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "ZoomSDK"
-  spec.version      = "4.1.34076.1024"
+  spec.version      = "4.3.1.47201.0322"
   spec.summary      = "Original framework for Zoom.us service"
   spec.homepage     = "https://github.com/zoom/zoom-sdk-ios"
   spec.license      = { :type => "Commercial", :file => "LICENSE.md" }
   spec.author             = { "Pavel Smelovsky" => "pavel.smelovsky@gmail.com" }
 
-  spec.swift_version           = "3.2"
-  spec.ios.deployment_target      = "9.0"
+  spec.swift_version              = "5.0"
+  spec.ios.deployment_target      = "10.0"
 
   spec.source       = { :git => "https://github.com/pavelsmelovsky/ZoomSDK.git", :tag => "v#{spec.version}" }
 
@@ -32,13 +32,14 @@ Pod::Spec.new do |spec|
     subspec.ios.resource = "MobileRTCResources.bundle"
   end
 
-  spec.subspec 'ShareScreen' do |subspec|
-    subspec.ios.dependency 'Core'
+  # Uncomment when this library will be support Swift 5 or higher
+  # spec.subspec 'ShareScreen' do |subspec|
+  #   subspec.ios.dependency 'Core'
 
-    subspec.ios.source_files            = "MobileRTCScreenShare.framework/Headers/**/*.{h,m}"
-    subspec.ios.public_header_files     = "MobileRTCScreenShare.framework/Headers/**/*.{h,m}"
-    subspec.ios.vendored_frameworks     = "MobileRTCScreenShare.framework"
-  end
+  #   subspec.ios.source_files            = "MobileRTCScreenShare.framework/Headers/**/*.{h,m}"
+  #   subspec.ios.public_header_files     = "MobileRTCScreenShare.framework/Headers/**/*.{h,m}"
+  #   subspec.ios.vendored_frameworks     = "MobileRTCScreenShare.framework"
+  # end
 
   # spec.requires_arc = true
 
