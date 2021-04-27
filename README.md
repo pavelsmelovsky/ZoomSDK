@@ -6,4 +6,4 @@ CocoaPods.
 ## Installation
 
 ```
-pod 'ZoomSDK', :git => 'https://github.com/pavelsmelovsky/ZoomSDK.git'
+pod 'ZoomSDK', :git => 'https://github.com/Yoshiatsu-Irei/ZoomSDK.git'
